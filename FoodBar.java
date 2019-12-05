@@ -3,8 +3,6 @@
  */
 public class FoodBar extends Amenity
 {
-
-	protected Room type;
 	public static final int COST = 10;
 
 	/**

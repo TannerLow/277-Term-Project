@@ -3,8 +3,6 @@
  */
 public class AutoRefill extends Amenity
 {
-
-	protected Room type;
 	public static final int COST = 5;
 
 	/**

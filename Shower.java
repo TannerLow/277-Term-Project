@@ -3,8 +3,6 @@
  */
 public class Shower extends Amenity
 {
-
-	protected Room type;
 	public static final int COST = 25;
 
 	/**
