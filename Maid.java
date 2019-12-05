@@ -4,6 +4,11 @@
 public class Maid implements RoomVisitor
 {
 	/**
+	 * Creates a Maid
+	 */
+	public Maid() {};
+	
+	/**
 	 * Visits a regular room
 	 * 
 	 * @param reg The regular room to visit
