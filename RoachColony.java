@@ -44,6 +44,11 @@ public class RoachColony implements WObserver
 		party = true;
 	}
 	
+	/**
+	 * Reduces the population of the RoachColony by spraying it
+	 * @param hasShower If the colony has used a resistance shower
+	 * @return If the colony has used a resistance shower
+	 */
 	public boolean spray(boolean hasShower) {
 		if(party) {
 			if(hasShower) {
