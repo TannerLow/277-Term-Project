@@ -47,6 +47,10 @@ public class Waitlist implements WSubject
 		}
 	}
 	
+	/**
+	 * Returns a String representation of this Waitlist
+	 * @return A String representation of this Wailist
+	 */
 	public String toString() {
 		return wList.toString();
 	}
