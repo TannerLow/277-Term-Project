@@ -9,16 +9,27 @@ public abstract class Room
 	protected boolean doNotDisturb;
 	protected int nights;
 
+	/**
+	 * Returns the number of nights this Room has been used
+	 * @return The number of nights this Room has been used
+	 */
 	public int getNights()
 	{
 		return nights;
 	}
 
+	/**
+	 * Increments the number of nights this Room has been used
+	 */
 	public void incNights()
 	{
 		nights++;
 	}
 
+	/**
+	 * Returns the RoachColony using this Room
+	 * @return The RoachColony using this Room
+	 */
 	public RoachColony getColony()
 	{
 		return roomColony;
@@ -34,16 +45,28 @@ public abstract class Room
 		this.roomColony = roomColony;
 	}
 
+	/**
+	 * Returns the description of this Room
+	 * @return The description of this Room
+	 */
 	public String getDescription()
 	{
 		return description;
 	}
 
+	/**
+	 * Sets the DoNotDisturb sign/flag of this Room to true/false
+	 * @param dnd The value of the DoNoDisturb flag to set
+	 */
 	public void setDoNotDisturb(boolean dnd)
 	{
 		doNotDisturb = dnd;
 	}
 
+	/**
+	 * Returns the value of the DoNotDisturb sign/flag of this Room
+	 * @return The value of the DoNotDisturb sign/flag of this Room
+	 */
 	public boolean getDoNotDisturb()
 	{
 		return doNotDisturb;
@@ -54,6 +77,10 @@ public abstract class Room
 	// More methods will be added but this one is necessary for visitor pattern
 	public abstract void accept(RoomVisitor visitor);
 	
+	/**
+	 * Returns a String representation of this Room
+	 * @return A String representation of this ROom
+	 */
 	public String toString()
 	{
 		return getDescription() + " $" +  getCost();
