@@ -50,9 +50,8 @@ public class RoachMotel
 	 * create a Room and Check in a colony to the room then add to the list of
 	 * rooms.
 	 * 
-	 * @param rc
-	 * @param rmtype
-	 * @param amenities
+	 * @param rc The RoachColony to check in
+	 * @param rmtype The Room being checked into
 	 * @return the checked-in room
 	 */
 	public Room checkin(RoachColony rc, String rmtype)
@@ -77,9 +76,9 @@ public class RoachMotel
 	 * create a Room and Check in a colony to the room then add to the list of
 	 * rooms.
 	 * 
-	 * @param rc
-	 * @param rmtype
-	 * @param amenities
+	 * @param rc The RoachColony to check in
+	 * @param rmtype The Room being checked into
+	 * @param amenities Amenities to add to the Room
 	 * @return the checked-in room
 	 */
 	public Room checkin(RoachColony rc, String rmtype, String[] amenities)
@@ -101,6 +100,11 @@ public class RoachMotel
 		}
 	}
 
+	/**
+	 * Check out of a Room, and pay with a PaymentStrategy
+	 * @param rm The Room to check out of
+	 * @param ps The PaymentStrategy to pay with
+	 */
 	public void checkout(Room rm, PaymentStrategy ps)
 	{
 		if(rooms.contains(rm)) {
@@ -115,6 +119,9 @@ public class RoachMotel
 		}
 	}
 
+	/**
+	 * The Maid cleans the Rooms. The Rooms are also sprayed. The Rooms will also have been counted towards staying a night.
+	 */
 	public void clean()
 	{
 		for (Room r : rooms)
@@ -147,6 +154,10 @@ public class RoachMotel
 		}
 	}
 	
+	/**
+	 * Returns the log of transactions at this RoachMotel
+	 * @return The log of transactions at this RoachMotel
+	 */
 	public String getLog() {
 		return log.toString();
 	}
