@@ -61,4 +61,13 @@ public class RoomFactory {
 		}
 		return r;
 	}
+	
+	/**
+	 * Returns a String representation of this RoomFactory
+	 * @return A String representation of this RoomFactory
+	 */
+	public String toString()
+	{
+		return "This is a Factory that creates Rooms";
+	}
 }
