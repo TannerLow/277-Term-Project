@@ -68,5 +68,13 @@ public class Maid implements RoomVisitor
 		}
 		System.out.println("Done.");
 	}
-
+	
+	/**
+	 * Returns a String representation of this Maid
+	 * @return A String representation of this Maid
+	 */
+	public String toString()
+	{
+		return "Maid - can visit motel rooms";
+	}
 }
